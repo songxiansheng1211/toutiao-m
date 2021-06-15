@@ -18,3 +18,10 @@ export const getSearchResult = params => {
     params
   })
 }
+// 获取用户搜索历史
+export const getSearchHis = () => {
+  return request({
+    method: 'get',
+    url: '/app/v1_0/suggestion'
+  })
+}

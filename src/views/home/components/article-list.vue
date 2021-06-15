@@ -53,7 +53,7 @@ export default {
       //     this.articles.push(item)
       //   })
       // console.log(this.articles)
-      console.log(results)
+      // console.log(results)
       this.loading = false
       if (results.length) {
         //   更新下一页数据的页码
