@@ -14,3 +14,7 @@ dayjs.locale('zh-cn')
 Vue.filter('relativeTime', value => {
   return dayjs(value).from(dayjs())
 })
+
+Vue.filter('dataTime', (value, format = 'YYYY-MM-DD HH:mm:ss') => { // 给一个默认值 需要不同的 可以传参设置成新的时间格式
+  return dayjs(value).format(format)
+})
